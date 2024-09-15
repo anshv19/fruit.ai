@@ -1,0 +1,84 @@
+/* About Page container styling */
+.about-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to right, #ff9a9e, #fad0c4, #fad0c4, #fbc2eb, #a6c1ee);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Content box styling */
+.about-container {
+  width: 100%;
+  max-width: 800px;
+  background: #fff;
+  color: #333;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  position: relative; 
+}
+
+/* Back button styling */
+.back-button {
+  background-color: #ff9a9e;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1rem;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.back-button:hover {
+  background-color: #ff6b6b;
+}
+
+/* Title and text styling */
+.about-title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center; 
+  margin: 40px 0 20px 0; 
+}
+
+.about-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .about-title {
+      font-size: 1.6rem;
+  }
+
+  .about-text {
+      font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-title {
+      font-size: 1.4rem;
+  }
+
+  .about-text {
+      font-size: 0.8rem;
+  }
+
+  .back-button {
+      font-size: 0.9rem;
+      padding: 8px 16px;
+      top: 10px;
+      left: 10px;
+  }
+} 

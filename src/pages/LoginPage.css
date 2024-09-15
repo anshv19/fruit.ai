@@ -1,0 +1,168 @@
+/* Main container for the login page */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #ff9a9e, #fad0c4);
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Title styling */
+  .login-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Login form styling */
+  .login-form {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+  }
+  
+  /* Input group styling */
+  .input-group {
+    position: relative;
+    margin-bottom: 15px;
+  }
+  
+  .input-icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #999;
+  }
+  
+  .eye-icon {
+    right: 10px;
+    left: auto;
+    cursor: pointer;
+  }
+  
+  /* Input fields styling */
+  .login-form input[type="text"],
+  .login-form input[type="password"] {
+    width: 100%;
+    padding: 12px 40px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+  }
+  
+  /* Login button styling */
+  .login-button {
+    background-color: #3b82f6;
+    color: white;
+    font-size: 1.2rem;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .login-button:hover {
+    background-color: #2563eb;
+  }
+  
+  /* Remember password and forget password styling */
+  .login-options {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+  }
+  
+  .forget-password {
+    font-size: 0.9rem;
+    color: #3b82f6;
+    text-decoration: none;
+  }
+  
+  .forget-password:hover {
+    text-decoration: underline;
+  }
+  
+  /* Additional text (privacy policy) styling */
+  .login-footer {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .login-footer a {
+    color: #3b82f6;
+    text-decoration: none;
+  }
+  
+  .login-footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Social icons styling */
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .social-icon {
+    font-size: 1.5rem;
+    color: #555;
+    cursor: pointer;
+  }
+  
+  .social-icon:hover {
+    color: #000;
+  }
+  
+  /* Mobile responsive adjustments */
+  @media (max-width: 768px) {
+    .login-title {
+      font-size: 1.5rem;
+    }
+  
+    .login-form {
+      padding: 15px;
+    }
+  
+    .login-form input[type="text"],
+    .login-form input[type="password"] {
+      font-size: 0.9rem;
+      padding: 10px 35px;
+    }
+  
+    .login-button {
+      font-size: 1rem;
+      padding: 10px;
+    }
+  
+    .login-options {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .login-footer {
+      font-size: 0.8rem;
+    }
+  
+    .social-icon {
+      font-size: 1.2rem;
+    }
+  }
+  
